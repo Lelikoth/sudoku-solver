@@ -15,19 +15,10 @@ def generate():
     Funkcja generuje tablicę sudoku, zapisuje ją w tablicy,
     natępnie zmienia jej format na 9x9
     '''
-    '''arr = np.array(list(str(generators.random_sudoku(avg_rank=50))))
-    arr = arr.reshape(9, 9).astype(np.int64).tolist()'''
-    arr = [
-        [7, 8, 0, 4, 0, 0, 1, 2, 0],
-        [6, 0, 0, 0, 7, 5, 0, 0, 9],
-        [0, 0, 0, 6, 0, 1, 0, 7, 8],
-        [0, 0, 7, 0, 4, 0, 2, 6, 0],
-        [0, 0, 1, 0, 5, 0, 9, 3, 0],
-        [9, 0, 4, 0, 6, 0, 0, 0, 5],
-        [0, 7, 0, 3, 0, 0, 0, 1, 2],
-        [1, 2, 0, 0, 0, 7, 4, 0, 0],
-        [0, 4, 9, 2, 0, 6, 0, 0, 7]
-        ]
+    
+    arr = np.array(list(str(generators.random_sudoku(avg_rank=50))))
+    arr = arr.reshape(9, 9).astype(np.int64).tolist()
+    
     return arr
 
 
